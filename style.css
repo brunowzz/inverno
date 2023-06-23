@@ -85,7 +85,6 @@ li:hover {
 
 .ursosPolares {
     background-color: #c5e5ef;
-    padding: 0 10vw;
 }
 
 .ursosPolares figure {
@@ -112,7 +111,10 @@ footer {
 .redesSociais {
     display: flex;
     align-items: center;
-    gap: 10px;
+}
+
+.redesSociais img {
+    margin-right: 10px;
 }
 
 .nomes {
