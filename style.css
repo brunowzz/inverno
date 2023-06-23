@@ -22,6 +22,22 @@ header section {
     width: 15vw;
 }
 
+header img:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 28px;
+    color: #ffffff;
+}
+
+h1:hover {
+    color: #E4EEF1;
+    cursor: pointer;
+    transform: scale(110%);
+}
+
 ul {
     display: flex;
     justify-content: space-around;
@@ -33,11 +49,14 @@ li {
     font-size: 28px;
 }
 
-h1 {
-    font-size: 22px;
+li:hover {
+    opacity: .8;
+    transform: scale(110%);
+    cursor: pointer;
 }
 
 .apresentacaoInverno {
+    background-color: #E4EEF1;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -65,6 +84,7 @@ h1 {
 }
 
 .ursosPolares {
+    background-color: #c5e5ef;
     padding: 0 10vw;
 }
 
@@ -73,4 +93,35 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+img:hover {
+    transform: scale(115%);
+    filter: blur(0.2px);
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: #4b93bf;
+}
+
+.redesSociais {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nomes {
+    display: flex;
+    flex-direction: column;
+}
+
+footer p {
+    text-align: center;
+    padding-right: 200px;
+    color: #ffffff;
 }
