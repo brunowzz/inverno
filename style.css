@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    text-decoration: none;
 }
 
 header {
@@ -38,21 +39,33 @@ h1:hover {
     transform: scale(110%);
 }
 
-ul {
+header nav {
     display: flex;
     justify-content: space-around;
     list-style: none;
     width: 40vw;
 }
 
-li {
-    font-size: 28px;
+nav a {
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    position: relative;
 }
 
-li:hover {
-    opacity: .8;
-    transform: scale(110%);
-    cursor: pointer;
+nav a::after {
+    content: " ";
+    width: 0;
+    height: 2px;
+    background: #E4EEF1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+header a:hover::after {
+    width: 100%;
 }
 
 .apresentacaoInverno {
@@ -66,7 +79,14 @@ li:hover {
 .apresentacaoInverno p {
     width: 620px;
     font-size: 20px;
+    font-weight: 400;
     color: #0F468C;
+}
+
+.apresentacaoInverno strong {
+    font-weight: 300;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .dataInvernoBrasil {
@@ -108,18 +128,25 @@ footer {
     background-color: #4b93bf;
 }
 
-.redesSociais {
+#redesSociais {
     display: flex;
     align-items: center;
-}
-
-.redesSociais img {
-    margin-right: 10px;
+    gap: 10px;
 }
 
 .nomes {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.nomes a {
+    color: #ffffff;
+}
+
+.nomes a:hover {
+    color: #d1dbe3;
 }
 
 footer p {
