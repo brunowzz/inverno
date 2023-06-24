@@ -11,7 +11,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: space-between;
     background-color: #4b93bf;
     color: #ffffff;
 }
