@@ -47,6 +47,7 @@ header nav {
 
 nav a {
     font-size: 20px;
+    font-weight: 400;
     line-height: 30px;
     color: #ffffff;
     position: relative;
@@ -150,6 +151,5 @@ footer {
 
 footer p {
     text-align: center;
-    padding-right: 200px;
     color: #ffffff;
 }
